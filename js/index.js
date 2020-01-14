@@ -8,6 +8,9 @@ document.querySelectorAll('a').forEach(element => {
     element.addEventListener('mouseleave', () => {
         element.style.backgroundColor = 'white';
     })
+    element.addEventListener('click', (event) => {
+        event.preventDefault();
+    })
 })
 
 document.querySelectorAll('img').forEach(el => {
@@ -59,4 +62,13 @@ document.querySelectorAll('.btn').forEach(el => {
     el.addEventListener('mouseout', () => {
         el.style.backgroundColor = 'papayawhip';
     })    
+})
+
+let destinationOne = document.querySelector('.destination');
+destinationOne.addEventListener('click', (event) => {
+    destinationOne.style.backgroundColor = '#b19cd9';
+    event.stopPropagation();
+})
+pageBody.addEventListener('click', (event) => {
+    pageBody.style.backgroundColor = 'orange';
 })
