@@ -54,3 +54,9 @@ thirdP.addEventListener('mousemove', () => {
 thirdP.addEventListener('mouseleave', () => {
     thirdP.style.transform = 'scale(1.0)';
 })
+
+document.querySelectorAll('.btn').forEach(el => {
+    el.addEventListener('mouseout', () => {
+        el.style.backgroundColor = 'papayawhip';
+    })    
+})
