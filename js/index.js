@@ -19,3 +19,16 @@ document.querySelectorAll('img').forEach(el => {
         el.style.transform= 'scale(1.0)';
     })
 })
+
+nav = document.querySelector('header');
+window.addEventListener('scroll', () => {
+    nav.style.backgroundColor = '#B9D9EB';
+})
+
+firstP = document.querySelector('p');
+firstP.addEventListener('dblclick', () => {
+    firstP.style.backgroundColor = 'yellow';
+})
+firstP.addEventListener('mouseleave', () => {
+    firstP.style.backgroundColor = 'white';
+})
