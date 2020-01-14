@@ -32,3 +32,11 @@ firstP.addEventListener('dblclick', () => {
 firstP.addEventListener('mouseleave', () => {
     firstP.style.backgroundColor = 'white';
 })
+
+secondP = document.querySelector('p:nth-child(2)');
+secondP.addEventListener('mousedown', () => {
+    secondP.style.color = 'red';
+})
+secondP.addEventListener('mouseup', () => {
+    secondP.style.color = 'black';
+})
