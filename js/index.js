@@ -40,3 +40,8 @@ secondP.addEventListener('mousedown', () => {
 secondP.addEventListener('mouseup', () => {
     secondP.style.color = 'black';
 })
+
+bodyBackground = document.querySelector('body');
+window.addEventListener('resize', () => {
+    bodyBackground.style.backgroundColor = 'pink';
+})
