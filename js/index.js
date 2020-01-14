@@ -10,6 +10,7 @@ document.querySelectorAll('a').forEach(element => {
     })
     element.addEventListener('click', (event) => {
         event.preventDefault();
+        event.stopPropagation();
     })
 })
 
