@@ -20,12 +20,12 @@ document.querySelectorAll('img').forEach(el => {
     })
 })
 
-nav = document.querySelector('header');
+let nav = document.querySelector('header');
 window.addEventListener('scroll', () => {
     nav.style.backgroundColor = '#B9D9EB';
 })
 
-firstP = document.querySelector('p');
+let firstP = document.querySelector('p');
 firstP.addEventListener('dblclick', () => {
     firstP.style.backgroundColor = 'yellow';
 })
@@ -33,7 +33,7 @@ firstP.addEventListener('mouseleave', () => {
     firstP.style.backgroundColor = 'white';
 })
 
-secondP = document.querySelector('p:nth-child(2)');
+let secondP = document.querySelector('p:nth-child(2)');
 secondP.addEventListener('mousedown', () => {
     secondP.style.color = 'red';
 })
@@ -41,7 +41,16 @@ secondP.addEventListener('mouseup', () => {
     secondP.style.color = 'black';
 })
 
-bodyBackground = document.querySelector('body');
+let pageBody = document.querySelector('body');
 window.addEventListener('resize', () => {
-    bodyBackground.style.backgroundColor = 'pink';
+    pageBody.style.backgroundColor = 'pink';
+})
+
+let thirdP = document.querySelector('.destination p');
+thirdP.addEventListener('mousemove', () => {
+    thirdP.style.transform = 'scale(1.2)';
+    thirdP.style.transition = '0.3s';
+})
+thirdP.addEventListener('mouseleave', () => {
+    thirdP.style.transform = 'scale(1.0)';
 })
